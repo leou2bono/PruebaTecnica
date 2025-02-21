@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   standalone: true,
 })
 export class ProductListComponent {
-  @Input() products: Product[] = [];
+  @Input() products!: Product[];
 }

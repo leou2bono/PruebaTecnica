@@ -6,11 +6,17 @@ import { SideMenuComponent } from '../../components/side-menu/side-menu.componen
 import { LoadingService } from '../../services/loading.service';
 import { environment } from '../../../environments/environment';
 import { ProductListComponent } from '../../components/product-list/product-list.component';
+import { ProductTableComponent } from '../../components/product-table/product-table.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [LayoutComponent, SideMenuComponent, ProductListComponent],
+  imports: [
+    LayoutComponent,
+    SideMenuComponent,
+    ProductListComponent,
+    ProductTableComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
